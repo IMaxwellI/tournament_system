@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Exo%202&display=swap');
+:root {
+    /* CSS HEX */
+    --giants-orange: #F95814;
+    --flame: #DF632C;
+    --air-force-blue: #608D98;
+    --charcoal: #2A4146;
+    --jet: #353535;
+    --eerie-black: #1B1B1B;
+    --night: #121212;
+
+    /* alternative palette */
+    --alternative-1: #007acc;
+    --alternative-2: #3e3e42;
+    --alternative-3: #2d2d30;
+    --alternative-4: #252526;
+    --alternative-5: #1e1e1e;
+
+    font-family: 'Exo 2';
+    color: white;
+}
+
+body{
+    display: flex;
+    background-color: var(--eerie-black);
+    margin: 0px;
+}
+
+.navigation-bar {
+    position: absolute;
+    height: 100%;
+    width: 150px;
+    left: -75px;
+    box-shadow: 4px 0px 10px rgba(0,0,0,0.5);
+    background-color: var(--air-force-blue);
+
+    /* transform: translateX(-75px); */
+    transition: transform 200ms ease-in-out;
+}
+.navigation-bar:hover {
+    transform: translateX(75px);
+    
+}
+
+.background-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background: url('background_landing.jpg')no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.15;
+    filter: blur(5px);
+}
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.content {
+    text-align: center;
+    width: max-content;
+    padding: 50px;
+    margin: 20px;
+
+    /* Line element */
+    
+}
+.welcome {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    margin: 0px;
+    line-height: 80px;
+}
+.line {
+    width: 727px;
+    height: 0px;
+    border: 2px solid #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sub-title1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0px;
+    line-height: 48px;
+}
+.sub-title2 {
+    font-weight: 300;
+    font-size: 32px;
+    margin: 0px;
+    line-height: 48px;
+}
