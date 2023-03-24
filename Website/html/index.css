@@ -20,15 +20,29 @@
     color: white;
 }
 
-/* 
-    Background Stuff
-*/
-body {
+body{
     display: flex;
     background-color: var(--eerie-black);
     margin: 0px;
 }
-.background-image {
+
+.navigation-bar {
+    position: absolute;
+    height: 100%;
+    width: 150px;
+    left: -75px;
+    box-shadow: 4px 0px 10px rgba(0,0,0,0.5);
+    background-color: var(--air-force-blue);
+
+    /* transform: translateX(-75px); */
+    transition: transform 200ms ease-in-out;
+}
+.navigation-bar:hover {
+    transform: translateX(75px);
+    
+}
+
+.background-image{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -40,64 +54,6 @@ body {
     opacity: 0.15;
     filter: blur(5px);
 }
-
-/* 
-    Navigation Stuff
-*/
-.nav-bar {
-    position: absolute;
-    display: flex;
-    height: 100%;
-    width: 75px;
-    box-shadow: 4px 0px 10px rgba(0,0,0,0.5);
-    background-color: var(--air-force-blue);
-    transition: width 200ms ease;
-    font-size: 30px;
-}
-.nav-bar:hover {
-    /* transform: translateX(75px); */
-    width: 150px;
-    
-}
-.nav-bar:hover .link-text{
-    display: inline;
-    margin-left: 1rem;
-
-}
-.nav-list{
-    background-color: greenyellow;
-    list-style: none;
-    padding: 0;
-    /* margin-left: 50%; */
-    display: flex;
-    flex-direction: column;
-    /* margin-left: 10px; */
-    height: 100%;
-    width: 100%;
-}
-.navbar-item {
-    align-items: left;
-    margin-left: 20px;
-}
-.nav-link {
-    
-}
-.link-text {
-    display: none;
-    font-size: 15px;
-}
-.fa-angles-right{
-    position: flex;
-    color: var(--jet);
-    
-}
-.navbar-items *{
-    font-size: 1rem;
-}
-
-/* 
-    Text Stuff
-*/
 .landing {
     display: flex;
     justify-content: center;
@@ -110,6 +66,9 @@ body {
     width: max-content;
     padding: 50px;
     margin: 20px;
+
+    /* Line element */
+    
 }
 .welcome {
     font-style: normal;
