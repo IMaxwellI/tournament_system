@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
     transition: width 300ms ease;
 }
 .navbar:hover {
-    width: 200px;
+    width: 210px;
 }
 .navbar:hover .link-text{
     /* idk if needed */
@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb {
 .navbar-link {
     display: flex;
     align-items: center; /* align-items VERTIKAL */
-    padding-left: 30px;
+    padding-left: 35px;
     overflow: hidden;
 
     height: 5rem;
@@ -116,14 +116,17 @@ body::-webkit-scrollbar-thumb {
 
     text-decoration: none;
     color: black;
-    filter: grayscale(100%) opacity(1);
-    transition: 200ms;
+    filter: grayscale(0%) opacity(1);
+    transition: 50ms;
 }
 .navbar-link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--charcoal);
     color: white;
     display: visible;
+}
+.navbar-link:hover .icon{
+    fill: var(--air-force-blue);
 }
 .navbar-logo {
     display: flex;
@@ -133,6 +136,10 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--charcoal);
     align-items: center;
     justify-content: center;
+    
+}
+.navbar-logo .icon {
+    fill: var(--air-force-blue);
 }
 .icon {
     display: flex;
@@ -141,6 +148,7 @@ body::-webkit-scrollbar-thumb {
     width: 30px;
     height: 30px;
 
+    fill: var(--charcoal);
 }
 
 .link-text {
@@ -159,6 +167,44 @@ body::-webkit-scrollbar-thumb {
 .navbar:hover .link-text {
     /* display: inline; */
     opacity: 100%;
+}
+.logo-text {
+    display: inline;
+    color: var(--air-force-blue);
+    font-weight: bold;
+    position: absolute;
+    text-decoration: none;
+    left: -300px;
+    font-size: 30px;
+
+    transition: 400ms ease;
+}
+.navbar:hover .logo-text {
+    /* display: inline; */
+    /* opacity: 100%; */
+    left: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    fill: var(--air-force-blue);
+}
+.logo svg {
+    transform: rotate(0deg);
+    transition: 300ms ease;
+}
+.navbar:hover .navbar-logo {
+    justify-content: right;
+}
+.navbar:hover .logo {
+    margin-right: 10px;
+}
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
 }
 .fa-angles-right{
 
