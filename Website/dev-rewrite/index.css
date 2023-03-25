@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Exo%202&display=swap');
+:root { /* Only define global values like variables or default font and font size*/
+    /* CSS HEX */
+    --giants-orange: #F95814;
+    --flame: #DF632C;
+    --air-force-blue: #608D98;
+    --charcoal: #2A4146;
+    --jet: #353535;
+    --eerie-black: #1B1B1B;
+    --night: #121212;
+
+    /* alternative palette */
+    --alternative-1: #007acc;
+    --alternative-2: #3e3e42;
+    --alternative-3: #2d2d30;
+    --alternative-4: #252526;
+    --alternative-5: #1e1e1e;
+
+    font-family: 'Exo 2';
+    font-size: 16px; /* All just defaults, we'll obviously set it new everywhere we need it */
+}
+/*
+Structure of the HTML
+- body
+    - background-image
+    - navbar
+        - navbar-logo
+        - navbar-item (multiple)
+            - navbar-link (multiple)
+                - link-text (multiple)
+    - landing
+
+*/
+
+/* 
+    Background Stuff
+*/
+body { /* Define position, background colour und default text colour */
+    background-color: var(--eerie-black); /* Default background colour */
+    color: white; /* Default text colour */
+    margin: 0; /* Body obviously starts completely top left*/
+    padding: 0;
+    overflow: hidden;
+}
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+
+    background: url('background_landing.jpg')no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.15;
+    filter: blur(5px);
+}
+
+/*
+    Scrollbar Stuff
+*/
+body::-webkit-scrollbar  {
+    width: 1rem;
+}
+body::-webkit-scrollbar-track {
+    background: var(--jet);
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--air-force-blue);
+  }
+
+
+/* 
+    Navigation Stuff
+
+    position: fixed; = An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled
+*/
+.navbar {
+    position: fixed;
+    background-color: var(--air-force-blue);
+
+    height: 100%;
+    width: 100px;
+
+    transition: width 300ms ease;
+}
+.navbar:hover {
+    width: 200px;
+}
+.navbar:hover .link-text{
+    /* idk if needed */
+}
+.navbar-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar-item {
+    width: 100%;
+}
+.navbar-link {
+    display: flex;
+    align-items: center; /* align-items VERTIKAL */
+    padding-left: 30px;
+    overflow: hidden;
+
+    height: 5rem;
+
+    /* background-color: greenyellow; */
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: red; */
+
+    text-decoration: none;
+    color: black;
+    filter: grayscale(100%) opacity(1);
+    transition: 200ms;
+}
+.navbar-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--charcoal);
+    color: white;
+    display: visible;
+}
+.navbar-logo {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--charcoal);
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+}
+
+.link-text {
+    position: absolute;
+    /* display: none; */
+    text-decoration: none;
+    opacity: 0%;
+    padding-left: 40px;
+    width: 150px;
+
+    transition: 200ms ease;
+}
+.link-text:visited {
+    color: black;
+}
+.navbar:hover .link-text {
+    /* display: inline; */
+    opacity: 100%;
+}
+.fa-angles-right{
+
+    
+}
+.navbar-items *{
+
+}
+
+/* 
+    Text Stuff
+*/
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 50px;
+}
+.content {
+    text-align: center;
+    width: max-content;
+    padding: 50px;
+    margin: 20px;
+}
+.welcome {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    margin: 0px;
+    line-height: 80px;
+}
+.line {
+    width: 727px;
+    height: 0px;
+    border: 2px solid #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sub-title1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0px;
+    line-height: 48px;
+}
+.sub-title2 {
+    font-weight: 300;
+    font-size: 32px;
+    margin: 0px;
+    line-height: 48px;
+}
