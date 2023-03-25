@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Exo%202&display=swap');
+:root { /* Only define global values like variables or default font and font size*/
+    /* CSS HEX */
+    --giants-orange: #F95814;
+    --flame: #DF632C;
+    --air-force-blue: #608D98;
+    --charcoal: #2A4146;
+    --jet: #353535;
+    --eerie-black: #1B1B1B;
+    --night: #121212;
+
+    /* alternative palette */
+    --alternative-1: #007acc;
+    --alternative-2: #3e3e42;
+    --alternative-3: #2d2d30;
+    --alternative-4: #252526;
+    --alternative-5: #1e1e1e;
+
+    font-family: 'Exo 2';
+    font-size: 16px; /* All just defaults, we'll obviously set it new everywhere we need it */
+}
+body { /* Define position, background colour und default text colour */
+    background-color: var(--eerie-black); /* Default background colour */
+    color: white; /* Default text colour */
+    margin: 0; /* Body obviously starts completely top left*/
+    padding: 0;
+    overflow: hidden;
+}

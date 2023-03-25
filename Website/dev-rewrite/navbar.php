@@ -1,23 +1,8 @@
-<!-- Version 0.3.1 / 25.03.2023 -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/3aba878674.js" crossorigin="anonymous"></script>
-    <title>IMaxwellI</title>
-</head>
-
-<body>
-    <div class="background-image"></div>
-
-    <nav class="navbar">
+<link rel="stylesheet" href="/css/navbar.css">
+<nav class="navbar">
         <ul class="navbar-list">
             <li class="navbar-logo">
-                <span class="logo-text">IMaxwellI</span>
+                <a href="/" class="logo-text">IMaxwellI</a>
                 <div class="logo">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L370.7 256 233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L178.7 256 41.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
                 </div>
@@ -25,7 +10,7 @@
             </li>
 
             <li class="navbar-item">
-                <a href="#" class="navbar-link">
+                <a href="/about-me.php" class="navbar-link">
                     <div class="icon">
                         <!-- <i class="fa-regular fa-address-card"></i> -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z"/></svg>
@@ -59,16 +44,3 @@
             </li>
         </ul>
     </nav>
-    <section class="landing">
-        <div class="content">
-            <h1 class="welcome">Welcome!</h1>
-            <h2 class="welcome">This is me, IMaxwellI</h2>
-            <hr class="line">
-            <p class="sub-title1">Freelance TO / TL</p>
-            <p class="sub-title2">Rocket League / osu! / etc.</p>
-        </div>
-    </section>
-
-</body>
-
-</html>
